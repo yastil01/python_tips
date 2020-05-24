@@ -33,7 +33,14 @@ List
 ======================================
 Strings
 ======================================
+To sort a string you can use sorted
+s = "dcba"
+s = sorted(s)
+this will give s = ['a', 'b', 'c', 'd']
 
+so we need to merge 
+s = ''.join(sorted(s))
+s will now become "abcd"
 ======================================
 Heaps
 ======================================
