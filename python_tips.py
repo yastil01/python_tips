@@ -21,6 +21,11 @@ hash = sorted(hash.items(), key = lambda x: x[1])
 # to sort hash by value
 hash = sorted(hash.items(), key = lambda x: x[1], reverse = True) 
 
+NOTE: THE HASH WILL NOW BECOME A LIST, SO IF YOU USE HASH.ITEMS(),
+IT WILL GIVE ERROR. FOLLOWING SHOULD WORK
+
+for key, val in hash:
+    print(key, val)
 ======================================
 List
 ======================================
