@@ -37,3 +37,18 @@ print ("Task 4:-\n")
 print ("Reverse Values are") 
 for i in sorted (key_value.values(), reverse = True) :  
     print(i) 
+
+#output
+Task 1:-                                                                                                                                                                                                                    
+                                                                                                                                                                                                                            
+Keys are                                                                                                                                                                                                                    
+1 2 3 4 5 6 Task 2:-                                                                                                                                                                                                        
+                                                                                                                                                                                                                            
+Reverse: Keys are                                                                                                                                                                                                           
+6 5 4 3 2 1 Task 3:-                                                                                                                                                                                                        
+                                                                                                                                                                                                                            
+Values are                                                                                                                                                                                                                  
+2 12 18 24 56 323 Task 4:-                                                                                                                                                                                                  
+                                                                                                                                                                                                                            
+Reverse Values are                                                                                                                                                                                                          
+323 56 24 18 12 2        
