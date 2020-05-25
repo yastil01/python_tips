@@ -31,6 +31,14 @@ List
 ======================================
 to allocate row*col 2d array in python
 res = [[-1 for _ in range(col)] for _ in range(row)]
+
+You can merge two list just like strings using + operator
+a = [1, 2]
+b = [3, 4]
+c = a + b
+c = [1, 2, 3, 4]
+NOTE: both a and b should be list here
+
 ======================================
 Strings
 ======================================
