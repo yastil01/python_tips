@@ -29,7 +29,8 @@ for key, val in hash:
 ======================================
 List
 ======================================
-
+to allocate row*col 2d array in python
+res = [[-1 for _ in range(col)] for _ in range(row)]
 ======================================
 Strings
 ======================================
