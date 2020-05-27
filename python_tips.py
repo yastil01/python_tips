@@ -1,5 +1,5 @@
 ======================================
-Hash
+Hash(Mutable)
 ======================================
 # to iterate over hash key
 hash = {'a': 1, 'b': 2, 'c': 3}
@@ -8,11 +8,11 @@ for key, val in hash.items():
   
 for key in hash:
   print(key, hash[key])
-
+-----------------------------------------------  
 # to sort hash by key
 hash = sorted(hash.items(), key = lambda x: x[0])
 
-# to sort hash by key
+# to sort hash by key in reverse
 hash = sorted(hash.items(), key = lambda x: x[0], reverse = True)
 
 # to sort hash by value
@@ -26,11 +26,18 @@ IT WILL GIVE ERROR. FOLLOWING SHOULD WORK
 
 for key, val in hash:
     print(key, val)
+-----------------------------------------------  
+To know if the python object is dictionary or not, we can use the following
+isinstance(x, dict) -> returns True if x is a dictionary.
+NOTE:
+This should be aplicable to other data types too
+
 ======================================
-List
+List(Mutable)
 ======================================
 to allocate row*col 2d array in python
 res = [[-1 for _ in range(col)] for _ in range(row)]
+-----------------------------------------------  
 
 You can merge two list just like strings using + operator
 a = [1, 2]
@@ -38,7 +45,8 @@ b = [3, 4]
 c = a + b
 c = [1, 2, 3, 4]
 NOTE: both a and b should be list here
-  
+-----------------------------------------------  
+
 You can find index for an element in the list using index()
 a = [1,2,3,4,5]
 print(a.index(5)) -> 4
@@ -47,7 +55,7 @@ a = [1,2,3,5,5,5]
 print(a.index(5)) -> 3
 
 ======================================
-Strings
+Strings(immutable)
 ======================================
 To sort a string you can use sorted
 s = "dcba"
@@ -57,6 +65,39 @@ this will give s = ['a', 'b', 'c', 'd']
 so we need to merge 
 s = ''.join(sorted(s))
 s will now become "abcd"
+
 ======================================
-Heaps
+Heaps(Mutable)
 ======================================
+
+======================================
+Tuple(Immutable)
+======================================
+Tuple is immutable.
+1) 
+a = (1, 2, 3)
+a[0] = 100 -> ERROR...! -> TypeError: 'tuple' object does not support item assignment
+NOTE:  
+so, you can not change the content of immutable objects after they are created.
+  
+2)
+a = (1, 2, 3)
+a = (100, 200, 300) -> works..!
+NOTE:
+You can always assign it to new value though as shown in the ex 2
+
+3)
+a = ([1,2,3], 'yash')
+a[0][0] = 100 -> works...! -> ([100, 2, 3], 'yash')
+NOTE:
+This works fine becuse mutable property is not based on the tuples, it is based on the
+objects tuples are pointing to. List is mutable so you can still modify that part of tuple
+
+4)
+a = ([1,2,3], 'yash')
+a[1] = 'janet' -> ERROR..! -> TypeError: 'tuple' object does not support item assignment 
+Note:
+This doesn't work becuse a[1] is pointing to a string which is immutable
+
+Immutable Objects : These are of in-built types like int, float, bool, string, unicode, tuple. 
+Mutable Objects : These are of type list, dict, set . Custom classes are generally mutable. 
