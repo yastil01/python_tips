@@ -92,6 +92,53 @@ so we need to merge
 s = ''.join(sorted(s))
 s will now become "abcd"
 
+-----------------------------------------------
+an_upper = "A"
+an_uppercase_check = an_upper.isupper()
+print(an_uppercase_check)
+True
+
+if given a string, it checks all char
+an_upper = "Ab"
+an_uppercase_check = an_upper.isupper()
+print(an_uppercase_check)
+False
+-----------------------------------------------
+an_lower = "a"
+an_lowercase_check = an_lower.islower()
+print(an_lowercase_check)
+True
+
+if given a string, it checks all char
+an_lower = "aB"
+an_lowercase_check = an_lower.islower()
+print(an_lowercase_check)
+-----------------------------------------------
+string = '15460'
+print(string.isdigit()) 
+True
+
+string = '154ayush60'
+print(string.isdigit())
+False
+-----------------------------------------------
+The isalpha() methods returns “True” if all characters in the string are alphabets, Otherwise, It returns “False”.
+
+string = 'Ayush'
+print(string.isalpha())
+True
+   
+string = 'Ayush0212'
+print(string.isalpha())
+False
+   
+# checking if space is an alphabet 
+string = 'Ayush Saxena'
+print( string.isalpha())
+False
+-----------------------------------------------
+isalnum() to check if string only contains numbers and alphabets
+
 ======================================
 Heaps(Mutable)
 ======================================
