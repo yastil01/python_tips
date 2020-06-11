@@ -25,4 +25,5 @@ without changing the order of the remaining elements.For the same example, there
 They are (1), (2), (3), (4), (1,2), (1,3),(1,4), (2,3), (2,4), (3,4), (1,2,3), (1,2,4), (1,3,4), (2,3,4), (1,2,3,4). 
 Basically for each element, we have two options. Either pick it in the subsequece or leave it
 
-More generally, we can say that for a sequence of size n, we can have (2^n-1) non-empty sub-sequences in total.
+More generally, we can say that for a sequence of size n, we can have (2^n-1) non-empty sub-sequences in total. 2^n if 
+you count an empty string too
