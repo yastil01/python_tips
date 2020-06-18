@@ -1,6 +1,27 @@
 ======================================
 Strings(immutable)
 ======================================
+Strings are immutable in python. Means once declared, you can't modify 
+perticular index
+
+for example,
+a = 'yash'
+a[0] = 'p'
+print(a)
+
+output:
+Traceback (most recent call last):                                                                                                                           
+  File "main.py", line 10, in <module>                                                                                                                       
+    a[0] = 'p'                                                                                                                                               
+TypeError: 'str' object does not support item assignment
+  
+NOTE: if you want to perform some operation on string in place, you gotta
+  convert string to list and then join it again. conversion can be done like
+  this
+  
+  s = list(s)
+
+-----------------------------------------------
 To sort a string you can use sorted
 s = "dcba"
 s = sorted(s)
