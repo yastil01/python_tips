@@ -16,6 +16,24 @@ you can still read the variable but can't write it as it is immutable
 to allocate row*col 2d array in python
 res = [[-1 for _ in range(col)] for _ in range(row)]
 
+or 
+
+a = [[0]*col]*row
+
+for example, 
+col = 2
+row = 3
+
+a = [[0]*col]*row
+res = [[0 for _ in range(col)] for _ in range(row)]
+print(a)
+print(res)
+
+Both will be same:
+[[0, 0], [0, 0], [0, 0]]                                                                                                                                     
+[[0, 0], [0, 0], [0, 0]]                                                                                                                                     
+                                   
+
 ----------------------------------------------- 
 To append an element at given index in list, use a.insert(index, val)
 a = [2,3,4]
