@@ -1,6 +1,19 @@
 ======================================
 Hash(Mutable)
 ======================================
+To convert a list in dict with count
+map[key] = map.get(key, 0) + 1
+
+for example,
+a = [1,2,3,1]
+map = {}
+
+for num in a:
+    map[num] = map.get(num, 0) + 1
+    
+print(map)
+{1: 2, 2: 1, 3: 1}   
+-----------------------------------------------
 # to iterate over hash key
 hash = {'a': 1, 'b': 2, 'c': 3}
 for key, val in hash.items():
