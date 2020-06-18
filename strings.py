@@ -17,9 +17,16 @@ TypeError: 'str' object does not support item assignment
   
 NOTE: if you want to perform some operation on string in place, you gotta
   convert string to list and then join it again. conversion can be done like
-  this
+  this. if you are given list of char, you are fine. You can modify in place
   
   s = list(s)
+  
+-----------------------------------------------
+  
+lets say you wanna swap two index char in a list of string. don't use custom
+swap function. You can just do it in this pythonic way. To swap s[i] with s[j]
+
+s[i], s[j] = s[j], s[i]
 
 -----------------------------------------------
 To sort a string you can use sorted
