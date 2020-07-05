@@ -34,6 +34,7 @@ s = "dcba"
 s = sorted(s)
 this will give s = ['a', 'b', 'c', 'd']
 
+
 so we need to merge 
 s = ''.join(sorted(s))
 s will now become "abcd"
@@ -152,3 +153,19 @@ print( string.isalpha())
 False
 -----------------------------------------------
 isalnum() to check if string only contains numbers and alphabets
+
+-----------------------------------------------
+To convert entire string in lower case
+string_name = string_name.lower()
+
+NOTE: Make sure you need to recive it back to some string. The function
+doesn't do in place lowering of characters
+-----------------------------------------------
+to remove punctuation from string
+
+for c in string.punctuation:
+  string_name = string_name.replace(c,' ')
+
+NOTE: make sure you need to receive it back to some string. The function 
+  doesn't fo in place replace
+  
