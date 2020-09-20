@@ -92,3 +92,10 @@ print('Return Value:', return_value)
 
 # Updated List
 print('Updated List:', languages)
+
+-----------------------------------------------
+
+a = [[1,2,3], [4,5,6], [7,8,9]]
+a.pop(1)
+a.insert(1, 100.25)
+print(a)
