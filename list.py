@@ -11,7 +11,17 @@ def parent():
     
  This works fine. remember this will not work for normal variable. 
 you can still read the variable but can't write it as it is immutable
+-----------------------------------------------
+a = []
+a[0] = 1
+This will give an error. You can not do this
+a.append(1)
+This will work fine
 
+if you want to do a[0] = 1, you need to allocate that list befor accessing it
+a=[0]*5
+a[0] = 1
+this will work fine
 ----------------------------------------------- 
 to allocate row*col 2d array in python
 res = [[-1 for _ in range(col)] for _ in range(row)]
