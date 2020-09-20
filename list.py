@@ -82,3 +82,13 @@ numbers = [1,2,3,4,5,1,4,5]
   
 # start parameter is not provided 
 Sum = sum(numbers) 
+-----------------------------------------------
+# programming languages list
+languages = ['Python', 'Java', 'C++', 'French', 'C']
+
+# remove and return the 4th item
+return_value = languages.pop(3)
+print('Return Value:', return_value)
+
+# Updated List
+print('Updated List:', languages)
