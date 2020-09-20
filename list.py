@@ -73,3 +73,12 @@ print(a.index(5)) -> 4
 if there are duplicates in the list, it returns the index with the 1st match
 a = [1,2,3,5,5,5]
 print(a.index(5)) -> 3
+-----------------------------------------------
+
+# Python code to demonstrate the working of  
+# sum() 
+   
+numbers = [1,2,3,4,5,1,4,5] 
+  
+# start parameter is not provided 
+Sum = sum(numbers) 
