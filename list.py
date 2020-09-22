@@ -99,3 +99,47 @@ a = [[1,2,3], [4,5,6], [7,8,9]]
 a.pop(1)
 a.insert(1, 100.25)
 print(a)
+
+-----------------------------------------------
+This is very important
+in python, list is passed by object reference by default
+for example, 
+
+def set_list(my_list): 
+    my_list.append("fuck")
+  
+def add(my_list): 
+    my_list.append("D")
+ 
+def print_list(my_list):
+    set_list(my_list) 
+    add(my_list)
+    print(my_list)
+
+print_list(["E"]) 
+
+what would be printed????
+You would be expecting the output to be ["E"] right?
+But you would be fucked and the output is actually ["E", "fuck", "D"]
+
+How to fix this? you need to pass list as a value and not by the object reference
+def set_list(my_list): 
+    my_list.append("fuck")
+  
+def add(my_list): 
+    my_list.append("D")
+ 
+def print_list(my_list):
+    set_list(list(my_list)) 
+    add(list(my_list))
+    print(my_list)
+
+print_list(["E"])
+
+output of the above code will be ["E"]
+
+You need to pass list(my_list) instead of my_list. That way you will send the copy of 
+my_list and not the object reference of my_list
+
+
+
