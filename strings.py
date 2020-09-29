@@ -177,3 +177,8 @@ def remove(string):
 # Driver Program 
 string = ' g e e k '
 print(remove(string)) 
+-----------------------------------------------
+to convert string in lower and remove spaces:
+        s = s.replace(" ", "")
+        s = s.lower()  
+-----------------------------------------------
