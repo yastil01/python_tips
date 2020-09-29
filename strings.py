@@ -168,4 +168,12 @@ for c in string.punctuation:
 
 NOTE: make sure you need to receive it back to some string. The function 
   doesn't fo in place replace
+-----------------------------------------------
   
+# Python3 code to remove whitespace 
+def remove(string): 
+    return string.replace(" ", "") 
+      
+# Driver Program 
+string = ' g e e k '
+print(remove(string)) 
