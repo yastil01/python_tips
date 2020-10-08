@@ -65,6 +65,11 @@ b = [3, 4]
 c = a + b
 c = [1, 2, 3, 4]
 NOTE: both a and b should be list here
+
+In a lot of recursion problems, you will need to append something and
+pass it to the other function, for example..
+
+func(curr + [nums[i]])
 -----------------------------------------------  
 
 You can find index for an element in the list using index()
