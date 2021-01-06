@@ -12,3 +12,5 @@
          [9,9,9,9] -> ans will be 0
       2. if target > nums[-1], it will return last index
       3. if target < nums[0], it will return 0
+      4. if you find a match, left==right==mid
+      5. if you don't find a match, it will return insert location
