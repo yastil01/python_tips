@@ -2,7 +2,7 @@
             left, right = 0, len(nums) - 1
             while left < right:
                 mid = left + (right - left) // 2
-                if nums[mid] >= target:
+                if target <= nums[mid]:
                     right = mid
                 else:
                     left = mid + 1
